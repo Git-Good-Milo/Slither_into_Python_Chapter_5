@@ -58,4 +58,30 @@ elif len(user_input) == 4:
         counter += 1
     print(final_int)
 
+# Question 4
+# Write a Python program that reads in a single integer from the user. Then read in 3 more integers, each time printing whether or not the number was higher or lower than the previous. You can assume that every number is different.
+#
+# First we need to set an initial user input and initialise a counter and the first two inputs
+counter = 0
+input_1 = int(input("Please enter your first number: "))
+input_2 = int(input("Please enter another number: "))
+
+# Write the while script
+# Will need to reassign inputs 1 and 2 so that the script can tell if the new number is higher or lower
+while counter <= 3:
+
+
+    if input_2 < input_1:
+        print("Lower")
+    else:
+        print("Higher")
+
+    input_3 = int(input("Please enter another number: "))
+    input_1 = input_2
+    input_2 = input_3
+    counter += 1
+
+
+
+
 
